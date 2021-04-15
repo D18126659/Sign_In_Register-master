@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+
+# Local configuration file containing path to sdk
+android/local.properties
+.android/local.properties
+local.properties
+# Project exclude paths
+/app/build/
+/app/build/intermediates/javac/debug/classes/

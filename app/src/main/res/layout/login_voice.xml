@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <!-- back arrow's layout -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <ImageButton
+                android:id="@+id/Back_Arrow"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/back_arrow"
+                android:scaleType="fitStart"/>
+
+        </RelativeLayout>
+
+
+        <!-- voice rec button's layout we will edit active to bring our icon back to the highest picture level-->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+
+
+                <ImageButton
+                    android:id="@+id/Mic_Icon"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/voicebutton"
+                    android:src="@drawable/microphone_icon"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    />
+
+        </RelativeLayout>
+
+
+        <!-- voice rec result's layout -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tap_Message_Voice"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Tap me"
+                />
+
+            <TextView
+                android:id="@+id/Speech_Output"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

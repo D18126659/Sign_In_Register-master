@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- back arrow's layout -->
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <ImageButton
+            android:id="@+id/Back_Arrow"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back_arrow"
+            android:scaleType="fitStart"
+            android:contentDescription="@string/back_arrowCD" />
+
+    </RelativeLayout>
+
+    <!-- Calendar's layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/Calendar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+<!-- Layout for list and textView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/No_Entries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="35sp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <ListView
+            android:id="@+id/List"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            />
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
